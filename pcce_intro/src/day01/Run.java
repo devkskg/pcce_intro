@@ -31,8 +31,18 @@ public class Run {
 		
 		
 		Solution08 s8 = new Solution08();
-		int[] numbers =  s8.solution({8, 2});
-		System.out.println("2, 3 : " + numbers[0]);
+		// 강의 중 알려주신 것. 중요!!!
+//		배열을 매개변수로 써야할 때
+//		방법 1.
+//		int[] nums = {1,2,3};
+//		s8.solution(nums);
+//		방법2
+//		int[] num2 = new int[] {1,2,3,4,};
+//		s8.solution(new int[] {1,2,3,4,});
+		
+		
+//		int[] numbers =  s8.solution({8, 2});
+//		System.out.println("2, 3 : " + numbers[0]);
 		
 		
 
