@@ -19,10 +19,9 @@ public class Run {
 		int n4 = s4.solution(4, 2);
 		System.out.println("4, 2 : " + n4);
 		
-		Solution05 s5 = new Solution05();
-		int n5 = s5.solution(7, 3);
-		System.out.println("3, 2 : " + n5);
 		
+//<<<<<<< HEAD
+//=======
 		Solution06 s6 = new Solution06();
 		int n6 = s6.solution(2, 3);
 		System.out.println("2, 3 : " + n6);
@@ -43,6 +42,7 @@ public class Run {
 		
 //		int[] numbers =  s8.solution({8, 2});
 //		System.out.println("2, 3 : " + numbers[0]);
+//>>>>>>> branch 'master' of https://github.com/devkskg/pcce_intro.git
 		
 		
 
