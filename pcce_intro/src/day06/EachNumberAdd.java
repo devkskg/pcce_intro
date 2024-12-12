@@ -7,12 +7,12 @@ public class EachNumberAdd {
 		int answer = 0;
 		while(true) {
 			int z = 0;
-			if(k >= 1) {
+			if(k > 0) {
 				z = n / k;
 				answer += z;
-				n = (z) * k;
-				k /= 10;
-			} else if(k < 0) {
+				n = n - (z) * k;
+				k = k / 10;
+			} else if(k <= 0) {
 				break;
 			}
 		}
