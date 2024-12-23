@@ -38,6 +38,7 @@ public class Binary {
 		
 		while(true) {
 			if(decaSum == 0) {
+				str += "0";
 				break;
 			}
 			if(decaSum >= (int)Math.pow(2, count)) {
