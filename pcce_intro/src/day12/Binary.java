@@ -36,22 +36,23 @@ public class Binary {
 		System.out.println(count);
 		String str = "";
 		
-		while(true) {
-			if(decaSum == 0) {
-				str += "0";
-				break;
+		if(decaSum == 0) {
+			str += "0";
+		} else {
+			while(true) {
+				if(decaSum >= (int)Math.pow(2, count)) {
+					decaSum = decaSum - (int)Math.pow(2, count);
+					count--;
+					str += "1";
+				} else {
+					str += "0";
+					count--;
+				}
+				if(count < 0) {
+					break;
+				}
 			}
-			if(decaSum >= (int)Math.pow(2, count)) {
-				decaSum = decaSum - (int)Math.pow(2, count);
-				count--;
-				str += "1";
-			} else {
-				str += "0";
-				count--;
-			}
-			if(count < 0) {
-				break;
-			}
+			
 		}
 		
 		
