@@ -7,7 +7,8 @@ public class OXquiz {
 
 	public static void main(String[] args) {
 		
-		String[] quiz = {"3 - 4 = -3", "5 + 6 = 11"};
+//		String[] quiz = {"3 - 4 = -3", "5 + 6 = 11"};
+		String[] quiz = {"-3 - -3 = 0"};
 		String[] answer = new String[quiz.length];
 		List<Integer> list = new ArrayList<Integer>();
 		String temp = "";
@@ -25,16 +26,22 @@ public class OXquiz {
 					temp += quiz[i].charAt(j) - '0';
 					
 				}  else if(quiz[i].charAt(j) == '-' ){
-                    temp = "-";
+
+					if(temp.equals("-")) {
+						temp = "+";
+					} else {
+						temp = "-";
+					}
                     
                 } else if(quiz[i].charAt(j) == '+'){
                     temp = "+";
                     
                 } 
-				
+				System.out.println(temp + "temp");
 				
 				if(temp != "" && temp != "+" && temp != "-" && quiz[i].charAt(j) == ' ') {
 					list.add(Integer.parseInt(temp));
+					System.out.println(Integer.parseInt(temp) + "temp 저장");
 					temp = "";
 				}
 				
@@ -52,7 +59,12 @@ public class OXquiz {
 					temp += quiz[i].charAt(j) - '0';
 					
 				} else if(quiz[i].charAt(j) == '-' ){
-                    temp = "-";
+					
+					if(temp.equals("-")) {
+						temp = "+";
+					} else {
+						temp = "-";
+					}
                     
                 } else if(quiz[i].charAt(j) == '+'){
                     temp = "+";
