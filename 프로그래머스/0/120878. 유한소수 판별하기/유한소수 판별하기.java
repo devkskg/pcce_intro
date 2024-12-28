@@ -2,6 +2,7 @@ class Solution {
     public int solution(int a, int b) {
         int answer = 2;
         int temp = 1;
+//         유클리드 호제법? GCD? 찾아보자
         
         for(int i = 2; i <= a && i <= b; i++){
             if(a % i == 0 && b % i == 0){
