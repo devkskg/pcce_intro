@@ -1,6 +1,6 @@
 class Solution {
     public int[] solution(int[][] score) {
-        int[] avg = new int[score.length];
+        double[] avg = new double[score.length];
         int[] answer = new int[avg.length];
         // int count = 1;
         
@@ -17,8 +17,9 @@ class Solution {
             for(int j = 0; j < score[i].length; j++){
                 sum += score[i][j];
             }
-            // avg[i] = sum / score[i].length;
-            avg[i] = sum;
+            avg[i] = (double)sum / score[i].length;
+            // avg[i] = sum;
+            // avg[i] = Math.round(sum / score[i].length);
         }
         
         for(int i = 0; i < avg.length; i++){
